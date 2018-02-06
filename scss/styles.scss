@@ -1,9 +1,13 @@
 @import 'font-awesome';
 @import 'typography';
-
+@import 'colors';
 
 .bold {
 	font-family: 'OpenSans-Bold'
+}
+
+a {
+	color:$darkgray;
 }
 
 
@@ -13,4 +17,30 @@ html, body {
   height:100%;
   font-family: 'OpenSans-Regular';
   font-size:16px;
+  color:$darkgray;
+}
+
+
+
+// Begin Header
+
+header {
+	background-color:$lightgray;
+	padding:20px;
+
+		.navbar {
+			padding:0px;
+
+				.navbar-nav {
+					.nav-item {
+
+						padding:0px 22px; 
+
+						a {
+							padding:0px;
+							@extend .bold;
+						}
+					}
+				}
+		}
 }
