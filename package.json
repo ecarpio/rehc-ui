@@ -1,0 +1,29 @@
+{
+  "name": "REHomeConnect",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "bootstrap": "4.0.0-beta.3",
+    "jquery": "^1.9.1 || ^2.0 || ^3.0",
+    "popper.js": "1.13.0",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "0.0.14",
+    "gulp-notify": "^3.0.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

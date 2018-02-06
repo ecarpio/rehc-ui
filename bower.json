@@ -1,0 +1,17 @@
+{
+  "name": "REHomeConect",
+  "description": "",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}
