@@ -26,20 +26,26 @@ html, body {
 
 header {
 	background-color:$lightgray;
-	padding:20px;
 
 		.navbar {
-			padding:0px;
+			padding:20px 0px 0px 0px;
 
 				.navbar-nav {
 					.nav-item {
+						padding:0px 22px 20px 22px;
+            text-align:center; 
+							&.active {
+                border-bottom:4px solid $blue;
+								a {
+									color:$blue;
+                  text-align:center;
+								}
+							}
 
-						padding:0px 22px; 
-
-						a {
-							padding:0px;
-							@extend .bold;
-						}
+							a {
+								padding:0px;
+								@extend .bold;
+							}
 					}
 				}
 		}
