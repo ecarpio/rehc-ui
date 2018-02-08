@@ -1,0 +1,29 @@
+.chart-container{
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+.chart-circle{
+  position: absolute;
+}
+.chart-circle--outer{
+  color: #006992;
+  width: 150px;
+}
+.chart-circle--normal{
+  color: #619eb7;
+
+  left:50%;
+  top:50%;
+  width: 130px;
+  margin:-65px 0 0 -65px;
+  z-index: 10;
+}
+.chart-circle--inner{
+  color: #b1d1de;
+  left:50%;
+  top:50%;
+  width: 110px;
+  margin:-55px 0 0 -55px;
+  z-index: 20;
+}

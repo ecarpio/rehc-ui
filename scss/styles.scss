@@ -3,6 +3,7 @@
 @import 'colors';
 @import 'easing';
 @import 'bootstrap-overrides';
+@import 'components/progress-chart';
 
 .bold {
 	font-family: 'OpenSans-Bold'
@@ -44,7 +45,7 @@ header {
 				.navbar-nav {
 					.nav-item {
 						padding:20px 22px 20px 22px;
-            text-align:center; 
+            text-align:center;
 							&.active {
                 border-bottom:4px solid $blue;
 								a {
@@ -105,7 +106,7 @@ header {
 }
 
 
-// Begin Side Nav 
+// Begin Side Nav
 .menu-expanded {
   #sideNav {
     left:0px;
@@ -172,7 +173,7 @@ header {
               padding:10px 30px;
               border-left:4px solid #fff;
               @extend .bold;
-                
+
                 &.active, &:hover {
                   color:$blue;
                   background-color:$lightgray;
