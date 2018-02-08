@@ -1,13 +1,23 @@
 @import 'font-awesome';
 @import 'typography';
 @import 'colors';
+@import 'easing';
+@import 'bootstrap-overrides';
 
 .bold {
 	font-family: 'OpenSans-Bold'
 }
 
+* {
+  outline:none;
+}
+
 a {
 	color:$darkgray;
+
+    &:hover {
+      text-decoration:none;
+    }
 }
 
 
@@ -18,21 +28,22 @@ html, body {
   font-family: 'OpenSans-Regular';
   font-size:16px;
   color:$darkgray;
+  background-color:$lightgray;
 }
 
 
 
 // Begin Header
-
 header {
 	background-color:$lightgray;
-
+  z-index:20;
+  position:relative;
 		.navbar {
-			padding:20px 0px 0px 0px;
+			padding:0px 0px 0px 0px;
 
 				.navbar-nav {
 					.nav-item {
-						padding:0px 22px 20px 22px;
+						padding:20px 22px 20px 22px;
             text-align:center; 
 							&.active {
                 border-bottom:4px solid $blue;
@@ -44,9 +55,141 @@ header {
 
 							a {
 								padding:0px;
-								@extend .bold;
 							}
 					}
 				}
 		}
+
+    .header-tools {
+      font-size:24px;
+      color:$medgray;
+
+        i {
+          margin-left:20px;
+        }
+    }
+}
+
+// Begin Search Bar
+.search-bar {
+  width:100%;
+  padding:20px 30px;
+  margin-bottom:20px;
+  position:relative;
+  background-color:#fff;
+    input {
+      width:100%;
+      border:0px;
+      padding:0px 30px;
+    }
+
+    &:before {
+      font-family:'fontAwesome';
+      content:'\f002';
+      left:30px;
+      position:absolute;
+      z-index:10;
+      color:$medgray;
+      font-size:18px;
+    }
+}
+
+/// Begin Breadcrumbs
+.breadcrumbs {
+  font-size:14px;
+  color:$blue;
+  margin-bottom:20px;
+    a {
+      color:$darkgray;
+    }
+}
+
+
+// Begin Side Nav 
+.menu-expanded {
+  #sideNav {
+    left:0px;
+  }
+
+  .dashboard {
+    margin-left:250px;
+  }
+
+}
+
+
+
+.sidenav {
+  background-color:#fff;
+  padding:20px 0px;
+  position:fixed;
+  height:100%;
+  z-index:15;
+  box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+  width:40px;
+  overflow:hidden;
+  width:250px;
+  left:-200px;
+  @extend .easeOut;
+
+    .toggle-sidenav {
+      position:absolute;
+      top:14px;
+      right:20px;
+      font-size:24px;
+      color:$medgray;
+
+        &.expanded {
+          &:after {
+            content:"\f00d";
+            font-size:20px;
+            font-family:'fontAwesome';
+          }
+        }
+    }
+
+    .dashboard-name {
+      @extend .bold;
+      color:$blue;
+      font-size:1.2rem;
+      text-transform:uppercase;
+      padding:0px 30px;
+      margin-bottom:30px;
+    }
+
+    ul {
+      margin:0px;
+      padding:0px;
+      width:100%;
+        li {
+          list-style-type:none;
+          width:100%;
+            a {
+              display:block;
+              width:100%;
+              color:$darkgray;
+              font-size:1.1rem;
+              padding:10px 30px;
+              border-left:4px solid #fff;
+              @extend .bold;
+                
+                &.active, &:hover {
+                  color:$blue;
+                  background-color:$lightgray;
+                  border-left:4px solid $blue;
+                }
+
+                .fa {
+                  margin-right:5px;
+                  min-width:25px;
+                }
+            }
+        }
+    }
+}
+
+// Dashboard
+.dashboard {
+  @extend .easeOut;
+  margin-left:50px;
 }

@@ -9,10 +9,15 @@
     
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
+    
+    <!-- Javascript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/function.js"></script>
+
   </head>
 
   <body>
-
+    <!-- Begin Header -->
     <header>
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg">
@@ -37,13 +42,95 @@
                 <a class="nav-link" href="#">Transactions</a>
               </li>
             </ul>
-             <span class="navbar-text">
-      Navbar text with an inline element
-    </span>
+            <span class="header-tools">
+              <i class="fa fa-bell"></i>
+              <i class="fa fa-gear"></i>
+              <i class="fa fa-user-circle"></i>
+            </span>
           </div>
         </nav>
       </div>
     </header>
+    <!-- End Header -->
+
+    <!-- Begin Side Navigation -->
+    <div class="sidenav expanded" id="sideNav">
+      <span id="toggleSidenav" class="toggle-sidenav expanded"></span>
+      <div class="dashboard-name">Agency</div>
+
+      <ul>
+        <li><a href="#" class="active"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="#"><i class="fa fa-user-circle"></i> Details</a></li>
+        <li><a href="#"><i class="fa fa-map-marker"></i> Coverage Area</a></li>
+        <li><a href="#"><i class="fa fa-building"></i> Branches</a></li>
+        <li><a href="#"><i class="fa fa-address-card"></i> Contacts</a></li>
+        <li><a href="#"><i class="fa fa-handshake-o"></i> Transactions</a></li>
+        <li><a href="#"><i class="fa fa-check-circle"></i> Tasks</a></li>
+        <li><a href="#"><i class="fa fa-check-circle"></i> Notes</a></li>
+        <li><a href="#"><i class="fa fa-check-circle"></i> Timeline</a></li>
+      </ul>
+
+
+    </div>
+    <!-- End Side Navigation -->
+
+    <!-- Begin Main Dashboard -->
+    <div class="dashboard">
+      <!-- Begin Search Bar -->
+      <div class="search-bar row no-gutters">
+        <div class="col-12">
+          <input type="search" placeholder="Search..." />
+        </div>
+      </div>
+      <!-- End Search Bar -->
+
+
+      <div class="container-fluid">
+        <div class="row breadcrumbs">
+          <div class="col-12">
+            <a href="#">Agencies</a> <i class="fa fa-angle-double-right"></i>  <span>Agency Name</span>
+
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-12 col-md-6">
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+
+          </div> 
+
+          <div class="col-12 col-md-6">
+            
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+
+          </div> 
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+    <!-- End Main Dashboard -->
 
   </body>
 </html>
