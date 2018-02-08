@@ -32,8 +32,8 @@ gulp.task('css', function() {
         .pipe(sass({
             outputStyle: 'compressed',
         	includePaths: [
-               config.bowerDir + '/font-awesome/scss',	
-           ], errLogToConsole: true 
+               config.bowerDir + '/font-awesome/scss',
+           ], errLogToConsole: true
         }))
 
 		.pipe(gulp.dest("./css"))
@@ -44,6 +44,8 @@ gulp.task('css', function() {
 gulp.task('compress', function() {
     return gulp.src([
             './node_modules/jquery/dist/jquery.min.js',
+						'./vendors/radialIndicator.js',
+						'./node_modules/datatable.js/dist/datatable.js.min.js',
             './node_modules/bootstrap/dist/js/bootstrap.min.js',
             './node_modules/jquery.html5loader/src/animations/jquery.html5Loader.line.js',
             './node_modules/jquery.html5loader/src/jquery.html5Loader.js',
